@@ -9,6 +9,10 @@ url=https://www.instagram.com/
     bool addToFavorite(Post)
     bool reportPost(Post)
     bool deletePost(Post)
+    bool deleteStory(Story)
+    List<Mutual> getMutuals(User)
+    List<Mutual> getMutualsComments(Post)
+    List<Mutual> getMutualReactionOnPost(Post)
     bool addToBookmarks(Post)
     List<User> likeOnPost(Post)
     List<Comment> commentsOnPost(Post)
@@ -65,3 +69,23 @@ url=https://www.instagram.com/
     bool addTagged(Tag)
     bool addSaved(Post)
     void sendAccessDeniedMessage()
+    bool deleteAcvity(Activity)
+    bool addToShare(Post)
+    int getTotalShares(Post)
+
+    List<Filter> getPostFilter(Post)
+    List<Filter> getStoryFilter(Story)
+    bool addStoryFilter(Story)
+    bool addPostFilter(Post)
+    bool changeThemes(bool)
+    List<User> getSentRequest()
+    List<User> getReceivedRequest()
+    bool deleteSentRequest()
+    bool deleteReceivedRequest()
+    bool updateSeenChats(Chat)
+
+
+
+private:
+    String getUserNameFromEmail(email)
+    Strng getUserNameFromContact(contact)
